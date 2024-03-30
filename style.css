@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #e7ffe7;
+}
+
+main {
+    flex: 1;
+    padding: 0 10%;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 30%;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 20%;
+}
+
+.navbar a:hover {
+    background-color: #3e8e41;
+}
+
+.section {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.help-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.help-section li {
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #cde4af;
+}
+
+.help-section li:hover {
+    cursor: pointer;
+}
+
+.contact-section address {
+    padding: 1rem;
+    border-radius: 5px;
+    font-style: normal;
+    line-height: 1.8;
+}
+
+.contact-section strong {
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.animal-card, .event-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.animal-card {
+    display: flex;
+}
+
+.animal-card img, .event-item img {
+    max-width: 200px;
+    border-radius: 15px;
+}
+
+.animal-card p {
+    padding: 50px 30px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar li {
+        float: none;
+    }
+}
